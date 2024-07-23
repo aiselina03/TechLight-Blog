@@ -1,0 +1,261 @@
+.signUpPage {
+  width: 80%;
+  margin: 50px auto;
+  font-family: sans-serif;
+
+  .signUp {
+    width: 100%;
+    max-width: 100%;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .signUpContent {
+      border: 1px solid gray;
+      width: 550px;
+      height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      h2 {
+        color: black;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+      .form {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        .input {
+          margin-top: 20px;
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          flex-direction: column;
+          span {
+            color: red;
+          }
+          .label {
+            color: black;
+            span {
+              color: red;
+            }
+          }
+          .field {
+            margin-top: 20px;
+            outline: none;
+            border: 1px solid black;
+            background-color: transparent;
+            width: 500px;
+            height: 45px;
+            padding: 7px;
+            color: black;
+            font-size: 15px;
+          }
+        }
+        .input2 {
+          margin-top: 20px;
+          .label {
+            color: black;
+            span {
+              color: red;
+            }
+          }
+
+          .fields {
+            display: flex;
+            width: 500px;
+            height: 45px;
+            padding: 7px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+
+            .field {
+              font-size: 15px;
+              color: black;
+              height: 45px;
+              width: 450px;
+              outline: none;
+              background-color: transparent;
+              border: none;
+            }
+            .fa-light {
+              cursor: pointer;
+              color: black;
+            }
+          }
+          span {
+            color: red;
+          }
+        }
+        .signUpText {
+          .privacy {
+            margin: 15px 0;
+            p {
+              color: black;
+            }
+            a {
+              color: black;
+            }
+          }
+        }
+        button {
+          margin-top: 20px;
+          height: 40px;
+          width: 500px;
+          background-color: black;
+          color: white;
+          border: none;
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 17px;
+          transition: all 600ms;
+          &:hover {
+            background-color: gray;
+          }
+        }
+      }
+      .haveAccount {
+        margin: 15px 0;
+        p {
+          color: black;
+          font-weight: 500;
+          a {
+            margin-left: 6px;
+            color: black;
+            transition: all 600ms;
+            font-weight: bold;
+            &:hover {
+              color: gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.account {
+  width: 100%;
+  height: 7vh;
+  max-width: 100%;
+  background-color: #16272d;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  p {
+    font-family: "Cormorant", serif;
+    margin-left: 60px;
+    color: black;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    a {
+      font-size: 17px;
+      margin-right: 9px;
+      cursor: pointer;
+      color: black;
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .signUpPage {
+    .signUp {
+      min-height: auto;
+      .signUpContent {
+        width: 280px;
+        height: auto;
+        .form {
+          .input {
+            .field {
+              width: 250px !important;
+            }
+          }
+          .input2 {
+            .fields {
+              width: 250px !important;
+              .field {
+                width: 250px !important;
+              }
+            }
+          }
+          button {
+            width: 250px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .signUpPage {
+    .signUp {
+      min-height: auto;
+      .signUpContent {
+        width: 450px;
+        height: auto;
+        .form {
+          .input {
+            .field {
+              width: 420px !important;
+            }
+          }
+          .input2 {
+            .fields {
+              width: 420px !important;
+              .field {
+                width: 420px !important;
+              }
+            }
+          }
+          button {
+            width: 420px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .signUpPage {
+    .signUp {
+      min-height: auto;
+      .signUpContent {
+        width: 720px;
+        height: auto;
+        .form {
+          .input {
+            .field {
+              width: 690px !important;
+            }
+          }
+          .input2 {
+            .fields {
+              width: 690px !important;
+              .field {
+                width: 690px !important;
+              }
+            }
+          }
+          button {
+            width: 690px !important;
+          }
+        }
+      }
+    }
+  }
+}

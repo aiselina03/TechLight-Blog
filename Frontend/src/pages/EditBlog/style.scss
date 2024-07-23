@@ -1,0 +1,132 @@
+.editBlogPage {
+  width: 80%;
+  margin: 30px auto;
+  font-family: sans-serif;
+  .form {
+    width: 75%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    min-height: 80vh;
+    .upload {
+      width: 450px;
+      height: 50px;
+      margin: 8px 0;
+      color: black;
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      justify-content: center;
+      cursor: pointer;
+      .fa-upload {
+        margin-right: 10px;
+      }
+    }
+    .noneInput {
+      display: none;
+    }
+    label {
+      font-weight: bold;
+    }
+    input {
+      width: 400px;
+      height: 50px;
+      margin: 10px 0;
+      padding: 5px;
+      outline: none;
+      border: 1px solid gray;
+      background-color: transparent;
+      color: black;
+      font-size: 15px;
+    }
+    button {
+      margin-top: 20px;
+      width: 400px;
+      height: 50px;
+      background-color: #000;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+      transition: all 600ms;
+      &:hover {
+        background-color: gray;
+      }
+    }
+    .delete {
+      background-color: red;
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .editBlogPage {
+    .form {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 50px;
+      min-height: auto;
+      width: 240px;
+      .upload {
+        width: 240px;
+      }
+
+      input {
+        width: 240px;
+      }
+      button {
+        width: 240px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .editBlogPage {
+    .form {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 50px;
+      min-height: auto;
+      width: 400px;
+      .upload {
+        width: 400px;
+      }
+
+      input {
+        width: 400px;
+      }
+      button {
+        width: 400px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1250px) {
+  .editBlogPage {
+    width: 100%;
+    margin: 30px auto;
+    .form {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 50px;
+      min-height: auto;
+      width: 700px;
+      .upload {
+        width: 320px;
+      }
+
+      input {
+        width: 320px;
+      }
+      button {
+        width: 320px;
+      }
+    }
+  }
+}

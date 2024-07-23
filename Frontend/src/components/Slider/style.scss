@@ -1,0 +1,40 @@
+.slick-next {
+  display: none !important;
+}
+.slick-prev {
+  display: none !important;
+}
+
+.sliderImage {
+  font-family: sans-serif;
+  width: 80%;
+
+  max-width: 100%;
+  margin: 20px auto;
+  img {
+    width: 100%;
+  }
+  .text {
+    width: 60%;
+    margin: 20px auto;
+    h1 {
+      color: #222222;
+      font-size: 32px;
+      line-height: 121.02%;
+    }
+    p {
+      color: #474747;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .sliderImage {
+    height: auto;
+    .text {
+      display: none;
+    }
+  }
+}

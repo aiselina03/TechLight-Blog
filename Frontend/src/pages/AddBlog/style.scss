@@ -1,0 +1,152 @@
+.addBlogSec {
+  width: 100%;
+  font-family: sans-serif;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  background-color: rgb(248, 249, 250);
+  p {
+    a {
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}
+
+.addBlogPage {
+  width: 75%;
+  margin: 30px auto;
+  font-family: sans-serif;
+  .addBlog {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    .addImage {
+      img {
+        width: 450px;
+
+        object-fit: cover;
+      }
+    }
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .upload {
+        height: 50px;
+        margin: 8px 0;
+        width: 400px;
+        color: black;
+        font-size: 17px;
+        border: 1px solid gray;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        justify-content: center;
+        cursor: pointer;
+        .fa-upload {
+          margin-right: 10px;
+        }
+      }
+      .noneInput {
+        display: none;
+      }
+      input {
+        width: 400px;
+
+        height: 50px;
+        margin: 8px 0;
+        padding: 5px;
+        outline: none;
+        border: 1px solid gray;
+        background-color: transparent;
+        color: black;
+        font-size: 15px;
+      }
+      button {
+        margin-top: 20px;
+
+        width: 400px;
+        height: 50px;
+        background-color: #000;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        transition: all 600ms;
+        &:hover {
+          background-color: gray;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .addBlogPage {
+    .addBlog {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 50px;
+      .addImage {
+        img {
+          max-width: 280px;
+        }
+      }
+      .form {
+        .upload {
+          max-width: 280px;
+        }
+
+        input {
+          max-width: 280px;
+        }
+        button {
+          max-width: 280px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .addBlogPage {
+    .addBlog {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 50px;
+
+      .addImage {
+        img {
+          max-width: 450px;
+        }
+      }
+      .form {
+        max-width: 450px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .addBlogPage {
+    .addBlog {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 70px;
+      min-height: 40vh;
+      .addImage {
+        img {
+          max-width: 350px;
+        }
+      }
+    }
+  }
+}
